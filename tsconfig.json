@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "module": "commonjs",
+        "target": "es5"
+    },
+    "files": [
+        "app.ng2.ts",
+        "components/book-list/book-list.ts",
+        "components/book/book.ts",
+        "utils/api.ts",
+        "typings/angular2/angular2.d.ts",
+        "server.ts"
+    ]
+}
