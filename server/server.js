@@ -8,6 +8,9 @@ const app = express()
     next()
   })
   .get('/books', (req, res) => {
+    
+    console.log('hi!')
+    
     utils.scrapeNYT('http://www.nytimes.com/best-sellers-books/').then((data) => {
       res.send(data);
     });

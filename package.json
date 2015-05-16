@@ -1,5 +1,5 @@
 {
-  "name": "webpack-lab",
+  "name": "ng2-nytimes",
   "version": "0.0.1",
   "description": "angular2/react webpack boilerplate",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mjws56/webpack-lab.git"
+    "url": "https://github.com/mjws56/ng2-nytimes.git"
   },
   "keywords": [
     "react",
@@ -16,7 +16,7 @@
   ],
   "author": "Mike Wilcox <mwilcox56@gmail.com> (http://github.com/mjw56)",
   "license": "MIT",
-  "homepage": "https://github.com/mjw56/webpack-lab",
+  "homepage": "https://github.com/mjw56/ng2-nytimes",
   "devDependencies": {
     "babel": "^5.2.17",
     "babel-core": "^5.2.17",

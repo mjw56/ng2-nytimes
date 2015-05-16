@@ -2,19 +2,12 @@
 import {Component, View} from 'angular2/angular2';
 
 @Component({
-    selector: 'book'
+    selector: 'book',
+    properties: {
+		book: 'book'
+	}
 })
 @View({
-    template: '<h4>{{index}}: {{summary}}</h4>' 
+    template: `<p>{{book.index}}: {{book.summary}}</p>`
 })
-export class Book {
-    
-    index: number;
-    summary: string;
-    
-    constructor() {
-        this.index = 0;
-        this.summary = 'summary';
-    }
-    
-}
+export class Book { }

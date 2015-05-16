@@ -2,22 +2,23 @@
 /// <reference path="../../typings/whatwg-fetch/whatwg-fetch.d.ts" />
 
 import {Component, View, For} from 'angular2/angular2';
-import {bind} from 'angular2/di';
 import {Book} from '../book/book';
 
 @Component({
     selector: 'book-list',
     properties: {
-		'list': 'list'
+		lists: 'lists'
 	}
 })
 @View({
     directives: [For, Book],
-    template: '<section><book></book></section>'
+    template: `
+        <div *for="#list of lists">
+            <h2>{{list.title}}</h2>
+            <div *for="#book of list.books">
+                <book [book]="book"></book>
+            </div>
+        </div>
+    `
 })
-export class BookList { 
-    
-    constructor() {
-    }
-    
-}
+export class BookList { }
