@@ -12,10 +12,10 @@ import {API} from './utils/api';
 })
 @View({
 	template: `
-		<div>
-			<h1>{{name}} App</h1>
-			<book-list [lists]="lists"></book-list>
-		</div>
+	  <div>
+	    <h1>{{name}} App</h1>
+		<book-list [lists]="lists"></book-list>
+	  </div>
 	`,
 	directives: [BookList]
 })
