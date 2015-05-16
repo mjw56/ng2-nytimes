@@ -7,8 +7,8 @@ import {Book} from '../book/book';
 @Component({
     selector: 'book-list',
     properties: {
-		lists: 'lists'
-	}
+      lists: 'lists'
+    }
 })
 @View({
     directives: [For, Book],
